@@ -1,5 +1,5 @@
 # Aula-Java 
-Programação Estruturada: Estrutura Sequencial
+Estrutura Sequencial
 
 IDE: Visual Studio Code
 
