@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.text.DecimalFormat;
 
+
 public class atividade10 {
     public static void main(String[] args){
         Scanner leia = new Scanner(System.in);

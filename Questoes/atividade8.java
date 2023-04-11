@@ -1,21 +1,24 @@
+//Duvida-Resposta certa do professor
 import java.util.Scanner;
 
 public class atividade8 {
-  public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    // ENTRADA
-    System.out.println("**Algoritmo de calculo**");
-    System.out.print("Quanto o total de veiculos ? ");
-    int totalVeiculos = sc.nextInt();
-    System.out.print("Quanto o total de rodas ? ");
-    int totalRodas = sc.nextInt();
-    // PROCESSAMENTO
-    int paresRoda = totalRodas / 2;
-    int motos = paresRoda - totalVeiculos;
-    totalRodas = totalRodas - motos * 2;
-    int carros = totalRodas / 4;
-    // SAIDA
-    System.out.println("Há " + carros + " carros e " + motos + " motos no estacionamento.");
-    sc.close();
-  }
+
+	public static void main(String[] args) {
+
+		int totalVeiculo, totalRoda, totalCarro, totalMoto;
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Programa - Controle de Veículos Estacionamento");
+		System.out.println("Informe o total de veículos no estacionamento: ");
+		totalVeiculo = scanner.nextInt();
+
+		System.out.println("Informe o total de rodas no estacionamento: ");
+		totalRoda = scanner.nextInt();
+
+		totalMoto = ((4 * totalVeiculo) - totalRoda) / 2;
+		totalCarro = totalVeiculo - totalMoto;
+
+		System.out.printf("\nO estacionamento possui: %d carro's e %d moto's.", totalCarro, totalMoto);
+		scanner.close();
+	}
 }
